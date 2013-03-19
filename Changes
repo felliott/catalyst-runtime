@@ -3,6 +3,10 @@
 5.90021 - TBA
   - Added 'x-tunneled-method' HTTP Header method override to match features in
     Catalyst::Action::REST and in other similar systems on CPAN
+  - Stricter checking of attributes in Catalyst::DispatchType::Chained:
+
+    1) Only allow one of either :CaptureArgs or :Args
+    2) :CaptureArgs() argument must be numeric
 
 5.90020 - 2013-02-22
   ! Catalyst::Action now defines 'match_captures' so it is no long considered
